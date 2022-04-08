@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #ccc;
+}
+
+.container {
+    width: 657px;
+    height: 520px;
+    border-radius: 20px;
+    padding: 25px;
+    margin: 50px auto;
+    text-align: center;
+    position: relative;
+    color: #000;
+    box-shadow: 0 0 20px 0 #1e262d;
+    background: #fff;
+}
+
+.mytable {
+    border-collapse: collapse;
+    margin: 10px;
+}
+
+.mytable th,
+td {
+    padding: 8px 10px;
+}
+
+.price-range {
+    width: 100px;
+    margin: 10px;
+}
+
+#fly {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+}
+
+input[type=number] {
+    outline: none;
+    padding: 1px 10px;
+}

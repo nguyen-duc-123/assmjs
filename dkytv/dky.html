@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký thành viên</title>
+    <link rel="stylesheet" href="dky.css">
+    <link rel="stylesheet" href="../style2.css">
+    <link rel="stylesheet" href="../footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="header">
+        <div class="logo">
+            <a href="../index.html"><img src="../Assets/logo.png" width="25%" height="auto" alt=""></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="https://nguyenduc--info.glitch.me/">Contact</a></li>
+                <li><a href="../slide/index.html">Slide Show</a></li>
+                <li><a href="dky.html">Subcribe</a></li>
+                <li><a href="../store/index.html">Store</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="container">
+        <div class="title">ĐĂNG KÝ THÀNH VIÊN</div>
+        <form id="form" class="form" onsubmit="return validate()">
+            <div class="info">
+                <div class="line">
+                    <label for="">Mã sinh viên</label><br>
+                    <input class="input" type="text" name="" id="ID" onclick="removeError()">
+                    <span class="error" id="error-id"></span>
+                </div>
+                <div class="line">
+                    <label for="">Họ và tên</label><br>
+                    <input class="input" type="text" id="fullname">
+                    <span class="error" id="error-name"></span>
+                </div>
+                <div class="line">
+                    <label for="">Email</label><br>
+                    <input class="input" type="text" name="" id="email" onclick="removeError()">
+                    <span class="error" id="error-email"></span>
+                </div>
+                <div class="line">
+                    <label for="">Giới tính</label><br>
+                    <div class="genders" id="genders">
+                        <input name="gender" type="radio" onclick="removeError()"><span> Nam</span> <br>
+                        <input name="gender" type="radio" onclick="removeError()"><span> Nữ</span>
+                    </div>
+                    <span class="error" id="error-gender"></span>
+                </div>
+                <div class="line">
+                    <label for="">Sở thích</label><br>
+                    <div class="genders" id="hobbies">
+                        <input class="hb" name="hobby" type="checkbox" onclick="removeError()"><span> Đọc sách</span><br>
+                        <input class="hb" name="hobby" type="checkbox" onclick="removeError()"><span> Du lịch</span><br>
+                        <input class="hb" name="hobby" type="checkbox" onclick="removeError()"><span> Âm nhạc</span><br>
+                        <input class="hb" name="hobby" type="checkbox" onclick="removeError()"><span> Game</span><br>
+                        <input class="hb" name="hobby" type="checkbox" onclick="removeError()"><span> Khác</span>
+                    </div>
+                    <span class="error" id="error-hobby"></span>
+                </div>
+                <div class="line">
+                    <label for="">Quốc tịch</label><br>
+                    <select name="" id="nation" class="input" onclick="removeError()">
+                        <option value="" selected disabled>Chọn quốc tịch</option>
+                        <option value="1">Vietnam</option>
+                        <option value="1">USA</option>
+                        <option value="1">Angola</option>
+                        <option value="1">Turkey</option>
+                    </select><br>
+                    <span class="error" id="error-nation"></span>
+                </div>
+                <div class="line">
+                    <label for="">Ghi chú</label><br>
+                    <textarea name="" id="note" cols="30" rows="10" class="input"
+                        onclick="removeError()"></textarea><br>
+                    <span class="error" id="error-note"></span>
+                </div>
+                <div class="line">
+                    <button type="submit" id="btn" onclick="removeError()">ĐĂNG KÝ</button>
+                </div>
+                <div id="alert" class="alert"></div>
+            </div>
+        </form>
+    </div>
+    <footer style="margin-top: 75px;" class="footer-distributed">
+        <div class="footer-left">
+            <h3>Nguyen Thien Duc</h3>
+            <p class="footer-links">
+                <a id="link" href="../index.html" class="link-1">Home</a>
+                <a id="link" href="https://nguyenduc--info.glitch.me/">Contact</a>
+                <a id="link" href="../slide/index.html">Slide</a>
+                <a id="link" href="../dkytv/dky.html">Subcribe</a>
+                <a id="link" href="../store/index.html">Store</a>
+            </p>
+            <p class="footer-company-name">Copyright By NguyenDuc</p>
+        </div>
+        <div class="footer-center">
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <a href="https://www.google.com/maps/place/Chung+c%C6%B0+nh%C3%A0+C+BQP/@21.0489151,105.7925304,19.5z/data=!4m5!3m4!1s0x3135ab0a084d956d:0x120c4c9b1f307096!8m2!3d21.049207!4d105.7928616">
+                  <p>
+                    <span>120 Hoang Quoc Viet</span>Cau Giay - Ha Noi
+                  </p>
+                </a>
+              </div>
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>+84823565***</p>
+            </div>
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a style="color: #fff;" href="mailto:ducntph27832@fpt.edu.vn">ducntph27832@fpt.edu.vn</a></p>
+            </div>
+        </div>
+        <div class="footer-right">
+            <p class="footer-company-about">
+                <span>Contact Me!</span>
+            </p>
+            <div class="footer-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="dky.js"></script>
+</body>
+</html>
